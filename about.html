@@ -1,0 +1,38 @@
+<!-- CONTACT FORM (About page) -->
+<section class="contact-block">
+  <h2>Contact & Enquiries</h2>
+  <p>For services, custom projects and training reach us using the form. We respond quickly.</p>
+
+  <form id="contactForm" class="contact-form" autocomplete="on" novalidate>
+    <div class="input-row">
+      <div class="input-group">
+        <input id="name" name="name" type="text" required placeholder=" " />
+        <label for="name">Name</label>
+      </div>
+
+      <div class="input-group">
+        <input id="phone" name="phone" type="tel" required placeholder=" " />
+        <label for="phone">Contact Number</label>
+      </div>
+    </div>
+
+    <div class="input-row">
+      <div class="input-group" style="width:100%">
+        <input id="email" name="email" type="email" required placeholder=" " />
+        <label for="email">Email</label>
+      </div>
+    </div>
+
+    <div class="input-group">
+      <textarea id="query" name="query" rows="5" required placeholder=" "></textarea>
+      <label for="query">Query</label>
+    </div>
+
+    <div class="form-actions">
+      <button type="submit" class="btn">Send Enquiry</button>
+      <button type="button" id="clearBtn" class="btn outline">Clear</button>
+    </div>
+
+    <p id="formStatus" class="form-status" aria-live="polite"></p>
+  </form>
+</section>

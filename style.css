@@ -1,0 +1,25 @@
+/* Glass card image normalization */
+.glass-card,
+.product-card img,
+.service-card img,
+.tile img,
+.card img {
+  width: 100%;
+  height: 220px;           /* fixed visual height (responsive) */
+  object-fit: cover;       /* crop but keep aspect ratio */
+  object-position: center;
+  display: block;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+/* Responsive tweak: smaller devices */
+@media (max-width: 520px) {
+  .glass-card,
+  .product-card img,
+  .service-card img,
+  .tile img,
+  .card img {
+    height: 160px;
+  }
+}
